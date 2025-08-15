@@ -21,6 +21,17 @@ if __name__ == "__main__":
     print(load_contacts())
 
 def add_contact():
-    name = input("Enter: ").strip()
+    name = input("Enter name: ").strip()
     phone = input("Enter phone: ").strip()
     email = input("Enter email: ").strip()
+    if not name:
+        print("Name is required."); return
+    contacts.append({"name": name, "phone": phone, "email": email})
+    save_contacts(contacts)
+    print("Contact added!")
+
+def view_contacts():
+    if not contacts:
+        print("No contacts found."); return
+    for idx, c in enumerate(contacts, start=1):
+        print(f"{idx}. {c['name']} | {c['phone']} | {c['email']}")
