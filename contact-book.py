@@ -1,3 +1,5 @@
+from cmath import phase
+
 FILENAME = "contact.txt"
 def load_contacts():
     contact = []
@@ -17,3 +19,8 @@ if __name__ == "__main__":
     test = [{"name": "Alice", "phone": "01234567", "email": "a@gmail.com"}]
     save_contacts(test)
     print(load_contacts())
+
+def add_contact():
+    name = input("Enter: ").strip()
+    phone = input("Enter phone: ").strip()
+    email = input("Enter email: ").strip()
