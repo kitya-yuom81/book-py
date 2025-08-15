@@ -15,15 +15,7 @@ It allows you to add, view, search, and delete contacts, with all data saved to 
 
 ---
 
-## 🗂 Project Structure
-contact-book/
-│
-├── .venv/ # Virtual environment (optional)
-├── contact_book.py # Main Python program
-├── contacts.txt # Auto-created data file
-└── README.md # This file
 
----
 
 ## 💻 Requirements
 - Python 3.6 or newer
