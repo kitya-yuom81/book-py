@@ -13,3 +13,7 @@ def save_contacts(contact):
     with open (FILENAME, "w") as file:
         for c in contact:
             file.write(f"{c['name']}, {c['phone']}, {c['email']}\n")
+if __name__ == "__main__":
+    test = [{"name": "Alice", "phone": "01234567", "email": "a@gmail.com"}]
+    save_contacts(test)
+    print(load_contacts())
